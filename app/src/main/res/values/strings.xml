@@ -10,4 +10,7 @@
     <string name="friends">Friends</string>
     <string name="favourites">Favourites</string>
     <string name="uploads">Uploads</string>
+    <string name="notifications">Notifications</string>
+    <string name="clear_notififcations">Clear notififcations</string>
+    <string name="chats">Chats</string>
 </resources>

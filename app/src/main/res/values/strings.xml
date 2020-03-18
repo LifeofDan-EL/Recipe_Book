@@ -4,4 +4,10 @@
     <string name="recipe_book">Recipe Book</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="recipes">Recipes</string>
+    <string name="chats">Chats</string>
+    <string name="networks">Networks</string>
+    <string name="friends">Friends</string>
+    <string name="favourites">Favourites</string>
+    <string name="uploads">Uploads</string>
 </resources>

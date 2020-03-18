@@ -7,4 +7,10 @@
     <color name="blue">#304FFE</color>
     <color name="black">#030304</color>
     <color name="white">#FFFF</color>
+    <color name="light_blue">#2196F3</color>
+    <color name="dark_blue">#3747A3</color>
+    <color name="light_green">#FF66BB6A</color>
+    <color name="light_brown">#FF614634</color>
+    <color name="red">#D50000</color>
+    <color name="yellow">#EDD13B</color>
 </resources>

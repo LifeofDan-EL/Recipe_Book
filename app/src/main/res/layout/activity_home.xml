@@ -30,16 +30,14 @@
         app:srcCompat="@drawable/avatar_home" />
 
 
-
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="210sp"
-        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -48,11 +46,10 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/recipe_cardView"
-
-                android:layout_width="70sp"
-                android:layout_height="70sp"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toStartOf="@+id/chats_cardView"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -74,18 +71,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/recipes"
-                        android:textSize="12sp"
-                        android:textColor="@color/dark_blue"/>
+                        android:textColor="@color/dark_blue"
+                        android:textSize="12sp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/chats_cardView"
-                android:layout_width="70sp"
-                android:layout_height="70sp"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toStartOf="@+id/network_cardView"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -107,8 +104,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/chats"
-                        android:textSize="12sp"
-                        android:textColor="@color/light_blue"/>
+                        android:textColor="@color/light_blue"
+                        android:textSize="12sp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </com.google.android.material.card.MaterialCardView>
@@ -116,15 +113,15 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/network_cardView"
-                android:layout_width="70sp"
-                android:layout_height="70sp"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/chats_cardView"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -141,24 +138,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/networks"
-                        android:textSize="12sp"
-                        android:textColor="@color/light_green"/>
+                        android:textColor="@color/light_green"
+                        android:textSize="12sp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/friends_cardView"
-                android:layout_width="70sp"
-                android:layout_height="70sp"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
 
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/favourite_cardView"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recipe_cardView" >
+                app:layout_constraintTop_toBottomOf="@+id/recipe_cardView">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -175,22 +174,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/friends"
-                        android:textSize="12sp"
-                        android:textColor="@color/light_brown"/>
+                        android:textColor="@color/light_brown"
+                        android:textSize="12sp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/favourite_cardView"
-                android:layout_width="70sp"
-                android:layout_height="70sp"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/uploads_cardView"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/friends_cardView"
-                app:layout_constraintTop_toBottomOf="@+id/chats_cardView" >
+                app:layout_constraintTop_toBottomOf="@+id/chats_cardView">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -207,19 +208,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/favourites"
-                        android:textSize="12sp"
-                        android:textColor="@color/red"/>
+                        android:textColor="@color/red"
+                        android:textSize="12sp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/uploads_cardView"
-                android:layout_width="70sp"
-                android:layout_height="70sp"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/favourite_cardView"
@@ -240,8 +243,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/uploads"
-                        android:textSize="12sp"
-                        android:textColor="@color/yellow"/>
+                        android:textColor="@color/yellow"
+                        android:textSize="12sp" />
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
             </com.google.android.material.card.MaterialCardView>
@@ -249,8 +252,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
-
-    
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

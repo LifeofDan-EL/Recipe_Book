@@ -13,5 +13,6 @@
     <string name="notifications">Notifications</string>
     <string name="clear_notififcations">Clear notififcations</string>
     <string name="a_selection">A selection of chicken dishes served together ...</string>
+    <string name="remove_friend">Remove Friend</string>
 
 </resources>

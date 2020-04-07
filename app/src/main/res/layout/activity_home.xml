@@ -46,13 +46,13 @@
 
 
             <com.google.android.material.card.MaterialCardView
-                app:cardElevation="10sp"
                 android:id="@+id/recipe_cardView"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                app:cardElevation="10sp"
                 app:layout_constraintEnd_toStartOf="@+id/chats_cardView"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -81,13 +81,13 @@
 
             <com.google.android.material.card.MaterialCardView
 
-                app:cardElevation="10sp"
                 android:id="@+id/chats_cardView"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                app:cardElevation="10sp"
                 app:layout_constraintEnd_toStartOf="@+id/network_cardView"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/recipe_cardView"
@@ -117,13 +117,13 @@
 
             <com.google.android.material.card.MaterialCardView
 
-                app:cardElevation="10sp"
                 android:id="@+id/network_cardView"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
+                app:cardElevation="10sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/chats_cardView"
@@ -152,15 +152,15 @@
 
             <com.google.android.material.card.MaterialCardView
 
-                app:cardElevation="10sp"
                 android:id="@+id/friends_cardView"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
-
                 android:layout_marginStart="16dp"
+
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="64dp"
+                app:cardElevation="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/favourite_cardView"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -189,7 +189,6 @@
 
             <com.google.android.material.card.MaterialCardView
 
-                app:cardElevation="10sp"
                 android:id="@+id/favourite_cardView"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
@@ -197,6 +196,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="64dp"
+                app:cardElevation="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/uploads_cardView"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -225,7 +225,6 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                app:cardElevation="10sp"
                 android:id="@+id/uploads_cardView"
                 android:layout_width="90sp"
                 android:layout_height="90sp"
@@ -233,6 +232,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="64dp"
+                app:cardElevation="10sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -269,29 +269,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:text="@string/notifications"
         android:textColor="@color/green"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraint_recycler"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.button.MaterialButton
-        android:elevation="1dp"
         android:id="@+id/materialButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/white"
+        android:elevation="1dp"
         android:text="@string/clear_notififcations"
         android:textColor="@color/grey"
         android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraint_recycler"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_recycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -303,7 +308,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_recycler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             app:layout_constraintBottom_toBottomOf="parent"

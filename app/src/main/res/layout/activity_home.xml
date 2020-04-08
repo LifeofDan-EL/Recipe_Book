@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".HomeActivity">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView"
-        android:layout_width="158dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Welcome Daniel"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="40dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar_home" />
@@ -32,23 +30,22 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/recipe_cardView"
-                android:layout_width="90sp"
-                android:layout_height="90sp"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
@@ -82,8 +79,8 @@
             <com.google.android.material.card.MaterialCardView
 
                 android:id="@+id/chats_cardView"
-                android:layout_width="90sp"
-                android:layout_height="90sp"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
@@ -118,8 +115,8 @@
             <com.google.android.material.card.MaterialCardView
 
                 android:id="@+id/network_cardView"
-                android:layout_width="90sp"
-                android:layout_height="90sp"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
@@ -153,8 +150,8 @@
             <com.google.android.material.card.MaterialCardView
 
                 android:id="@+id/friends_cardView"
-                android:layout_width="90sp"
-                android:layout_height="90sp"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
                 android:layout_marginStart="16dp"
 
                 android:layout_marginTop="32dp"
@@ -190,8 +187,8 @@
             <com.google.android.material.card.MaterialCardView
 
                 android:id="@+id/favourite_cardView"
-                android:layout_width="90sp"
-                android:layout_height="90sp"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
@@ -226,8 +223,8 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/uploads_cardView"
-                android:layout_width="90sp"
-                android:layout_height="90sp"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
@@ -268,53 +265,37 @@
         android:id="@+id/materialTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/notifications"
         android:textColor="@color/green"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/constraint_recycler"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView"
-        app:layout_constraintVertical_bias="0.0" />
+      />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/materialButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/white"
         android:elevation="1dp"
         android:text="@string/clear_notififcations"
         android:textColor="@color/grey"
         android:textSize="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/constraint_recycler"
+        app:layout_constraintBottom_toBottomOf="@+id/materialTextView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/materialTextView2"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_recycler"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_recycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialTextView2">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/home_recycler"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

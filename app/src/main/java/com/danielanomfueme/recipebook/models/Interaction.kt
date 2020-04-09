@@ -5,7 +5,8 @@ data class Interaction(
     var time: String,
     var image: String,
     var name: String,
-    var message: String
+    var message: String,
+    var friends: String
 ){
 
 }

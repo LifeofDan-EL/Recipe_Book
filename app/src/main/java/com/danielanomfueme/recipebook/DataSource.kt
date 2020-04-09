@@ -13,7 +13,8 @@ class DataSource {
                     "Yesterday",
                      "https://avatars0.githubusercontent.com/u/17446480?s=400&u=95456223423719702a46351dc8ba422d992de600&v=4",
                      "Daniel Anomfueme",
-                     "I love you"
+                     "I love you",
+                     "100k Friends"
                  )
              )
 
@@ -23,7 +24,8 @@ class DataSource {
                      "Wednesday 18 March",
                      "https://avatars0.githubusercontent.com/u/17446480?s=400&u=95456223423719702a46351dc8ba422d992de600&v=4",
                      "Luke Skywalker",
-                     "Peace be unto you"
+                     "Peace be unto you",
+                     "20k Friends"
                  )
              )
 
@@ -33,7 +35,8 @@ class DataSource {
                      "Monday 5 April",
                      "https://avatars0.githubusercontent.com/u/17446480?s=400&u=95456223423719702a46351dc8ba422d992de600&v=4",
                      "Captain Spock",
-                     "May the force be with you"
+                     "May the force be with you",
+                     "100 Friends"
                  )
              )
 
@@ -44,7 +47,8 @@ class DataSource {
                      "Monday 15 March",
                      "https://avatars0.githubusercontent.com/u/17446480?s=400&u=95456223423719702a46351dc8ba422d992de600&v=4",
                  "James Cameroon",
-                     "Here he is"
+                     "Here he is",
+                     "250k Freinds"
                  )
              )
 
@@ -54,7 +58,8 @@ class DataSource {
                      "Yesterday",
                      "https://avatars0.githubusercontent.com/u/17446480?s=400&u=95456223423719702a46351dc8ba422d992de600&v=4",
                      "Daniel Anomfueme",
-                     "I love you"
+                     "I love you",
+                     "350k Friends"
                  )
              )
 
@@ -64,7 +69,8 @@ class DataSource {
                      "Wednesday 18 March",
                      "https://avatars0.githubusercontent.com/u/17446480?s=400&u=95456223423719702a46351dc8ba422d992de600&v=4",
                     "Luke Skywalker",
-                     "Peace be unto you"
+                     "Peace be unto you",
+                     "400 Friends"
                  )
              )
 
@@ -74,7 +80,8 @@ class DataSource {
                      "Monday 15 March",
                      "https://avatars0.githubusercontent.com/u/17446480?s=400&u=95456223423719702a46351dc8ba422d992de600&v=4",
                      "James Cameroon",
-                     "Here he is"
+                     "Here he is",
+                     "350 Friends"
                  )
              )
 

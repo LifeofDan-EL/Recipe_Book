@@ -29,7 +29,6 @@ class HomeRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
     override fun getItemCount(): Int {
         return items.size
     }
-
     fun submitList(interactionList: List<Interaction>){
         items = interactionList
     }

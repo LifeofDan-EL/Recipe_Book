@@ -11,14 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UploadsActivity"></activity>
-        <activity android:name=".FavouriteActivity" />
-        <activity android:name=".FriendsActivity" />
-        <activity android:name=".NetworksActivity" />
-        <activity android:name=".ChatsActivity" />
-        <activity android:name=".RecipesActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".ui.UploadsActivity"></activity>
+        <activity android:name=".ui.FavouriteActivity" />
+        <activity android:name=".ui.friends.FriendsActivity" />
+        <activity android:name=".ui.networks.NetworksActivity" />
+        <activity android:name=".ui.chats.ChatsActivity" />
+        <activity android:name=".ui.recipes.RecipesActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

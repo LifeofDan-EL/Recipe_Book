@@ -1,4 +1,4 @@
-package com.danielanomfueme.recipebook
+package com.danielanomfueme.recipebook.ui.friends
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.danielanomfueme.recipebook.R
 import com.danielanomfueme.recipebook.models.Interaction
 import kotlinx.android.synthetic.main.chat_list_layout.view.user_image
 import kotlinx.android.synthetic.main.chat_list_layout.view.user_name
@@ -16,7 +17,11 @@ class FriendsRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return InteractionViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.friends_list_layout, parent, false)
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.friends_list_layout,
+                parent,
+                false
+            )
         )
     }
 

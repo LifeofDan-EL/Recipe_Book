@@ -1,10 +1,10 @@
-package com.danielanomfueme.recipebook
+package com.danielanomfueme.recipebook.ui.home
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
+import com.danielanomfueme.recipebook.R
 import com.danielanomfueme.recipebook.models.Interaction
 import kotlinx.android.synthetic.main.home_list_layout.view.*
 
@@ -13,7 +13,11 @@ class HomeRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return InteractionViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.home_list_layout, parent, false)
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.home_list_layout,
+                parent,
+                false
+            )
         )
     }
 

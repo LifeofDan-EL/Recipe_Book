@@ -1,10 +1,19 @@
-package com.danielanomfueme.recipebook
+package com.danielanomfueme.recipebook.ui.home
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.danielanomfueme.recipebook.*
+import com.danielanomfueme.recipebook.models.DataSource
+import com.danielanomfueme.recipebook.ui.FavouriteActivity
+import com.danielanomfueme.recipebook.ui.TopSpacingItemDecoration
+import com.danielanomfueme.recipebook.ui.UploadsActivity
+import com.danielanomfueme.recipebook.ui.chats.ChatsActivity
+import com.danielanomfueme.recipebook.ui.friends.FriendsActivity
+import com.danielanomfueme.recipebook.ui.networks.NetworksActivity
+import com.danielanomfueme.recipebook.ui.recipes.RecipesActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -56,16 +65,19 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun addDataSet(){
-        val data = DataSource.createDataSet()
+        val data =
+            DataSource.createDataSet()
         interactionAdapter.submitList(data)
     }
 
     private fun initRecyclerView(){
         home_recycler.apply{
             layoutManager = LinearLayoutManager(this@HomeActivity)
-            val topSpacingDecoration = TopSpacingItemDecoration(30)
+            val topSpacingDecoration =
+                TopSpacingItemDecoration(30)
             addItemDecoration(topSpacingDecoration)
-            interactionAdapter = HomeRecyclerAdapter()
+            interactionAdapter =
+                HomeRecyclerAdapter()
             adapter = interactionAdapter
         }
     }

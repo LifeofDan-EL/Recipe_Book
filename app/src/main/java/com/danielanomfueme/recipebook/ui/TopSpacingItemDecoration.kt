@@ -1,4 +1,4 @@
-package com.danielanomfueme.recipebook
+package com.danielanomfueme.recipebook.ui
 
 import android.graphics.Rect
 import android.view.View

@@ -1,10 +1,11 @@
-package com.danielanomfueme.recipebook
+package com.danielanomfueme.recipebook.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_main.*
+import com.danielanomfueme.recipebook.R
+import com.danielanomfueme.recipebook.ui.home.HomeActivity
 
 class LoginActivity : AppCompatActivity() {
 

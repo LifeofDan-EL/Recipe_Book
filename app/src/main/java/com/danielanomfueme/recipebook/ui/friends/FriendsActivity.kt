@@ -1,9 +1,11 @@
-package com.danielanomfueme.recipebook
+package com.danielanomfueme.recipebook.ui.friends
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_chats.*
+import com.danielanomfueme.recipebook.models.DataSource
+import com.danielanomfueme.recipebook.R
+import com.danielanomfueme.recipebook.ui.TopSpacingItemDecoration
 import kotlinx.android.synthetic.main.activity_friends.*
 
 class FriendsActivity : AppCompatActivity() {
@@ -20,16 +22,19 @@ class FriendsActivity : AppCompatActivity() {
     }
 
     private fun addDataSet(){
-        val data = DataSource.createDataSet()
+        val data =
+            DataSource.createDataSet()
         interactionAdapter.submitList(data)
     }
 
     private fun initRecyclerView(){
         friends_recycler.apply{
             layoutManager = LinearLayoutManager(this@FriendsActivity)
-            val topSpacingDecoration = TopSpacingItemDecoration(8)
+            val topSpacingDecoration =
+                TopSpacingItemDecoration(8)
             addItemDecoration(topSpacingDecoration)
-            interactionAdapter = FriendsRecyclerAdapter()
+            interactionAdapter =
+                FriendsRecyclerAdapter()
             adapter = interactionAdapter
         }
     }

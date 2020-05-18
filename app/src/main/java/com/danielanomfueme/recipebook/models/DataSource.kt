@@ -1,4 +1,4 @@
-package com.danielanomfueme.recipebook
+package com.danielanomfueme.recipebook.models
 
 import com.danielanomfueme.recipebook.models.Interaction
 
